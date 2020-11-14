@@ -8,5 +8,5 @@ https://www.digitalocean.com/community/tutorials/how-to-automate-jenkins-setup-w
 
 #### Run command
 ```
-docker run --name jenkins --rm -p 8080:8080 --env JENKINS_ADMIN_ID=admin --env JENKINS_ADMIN_PASSWORD=pwd99 jenkins:jcasc
+docker run --name jenkins --rm -p 8080:8080 --env JENKINS_ADMIN_ID=<USERID> --env JENKINS_ADMIN_PASSWORD=<PASSWORD> jenkins:jcasc
 ```
