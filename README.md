@@ -12,5 +12,5 @@ docker build -t jenkins:casc .
 
 #### docker run command
 ```
-docker run --name jenkins --rm -p 8080:8080 --env JENKINS_ADMIN_ID=<USERID> --env JENKINS_ADMIN_PASSWORD=<PASSWORD> jenkins:jcasc
+docker run --name jenkins --rm -p 8080:8080 --env JENKINS_ADMIN_ID=<USERID> --env JENKINS_ADMIN_PASSWORD=<PASSWORD> jenkins:casc
 ```
