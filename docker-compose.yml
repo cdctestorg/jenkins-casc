@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  jenkins:
+    build: .
+    privileged: true
+    user: root
+    ports:
+      - 9080:8080
+      - 50000:50000
+    container_name: jenkins
+    volumes:
+      - ./jenkins_home:/var/jenkins_home
+    build:
+      context: . 
