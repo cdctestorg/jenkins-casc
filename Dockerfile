@@ -4,7 +4,9 @@ ENV CASC_JENKINS_CONFIG /var/jenkins_home/casc.yaml
 
 USER root
 RUN curl -sSL https://get.docker.com/ | sh
-RUN usermod -a -G docker jenkins
+
+RUN usermod -aG docker jenkins
+
 USER jenkins
 
 COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
